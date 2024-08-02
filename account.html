@@ -1,97 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - FashionHub</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .account-container {
-            max-width: 800px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .account-container h2 {
-            color: #333;
-        }
-        .account-info {
-            margin-top: 20px;
-        }
-        .account-info p {
-            margin: 10px 0;
-            line-height: 1.6;
-            color: #555;
-        }
-        .logout-btn {
-            background-color: #d9534f;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-align: center;
-            display: inline-block;
-        }
-        .logout-btn:hover {
-            background-color: #c9302c;
-        }
-    </style>
-</head>
-<body>
+---
+layout: default
+title: My Account - FashionHub
+---
 
-<header>
-    <h1>FashionHub</h1>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">My Account</a>
-    <a href="#">Cart</a>
-</nav>
-
-<div class="account-container">
-    <h2>Welcome, Test User!</h2>
-    <div class="account-info">
-        <p><strong>Username:</strong> testUser</p>
-        <p><strong>Email:</strong> testuser@example.com</p>
-        <p><strong>Order History:</strong></p>
-        <ul>
-            <li>Order #12345 - Status: Shipped</li>
-            <li>Order #67890 - Status: Delivered</li>
-        </ul>
-    </div>
-    <a href="index.html" class="logout-btn">Logout</a>
+<div class="account-page">
+    <h2>Welcome, testUser!</h2>
+    <p>Here is your account information and recent orders.</p>
+    <!-- Add more account details here -->
 </div>
-
-</body>
-</html>
