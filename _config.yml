@@ -1,7 +1,8 @@
 title: FashionHub
 description: >- 
   Your one-stop shop for the latest fashion trends.
-baseurl: "" # the subpath of your site, e.g. /blog
+domain: https://pocketaces2.github.io/
+url: https://pocketaces2.github.io/
 
 # Build settings
 theme: jekyll-theme-minimal
