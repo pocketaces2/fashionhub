@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll-theme-minimal"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", "~> 231"
+  gem "github-pages", "~> 231", group: :jekyll_plugins
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
