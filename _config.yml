@@ -1,0 +1,10 @@
+title: FashionHub
+description: >- 
+  Your one-stop shop for the latest fashion trends.
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+theme: jekyll-theme-minimal
+
+sass:
+  sass_dir: _sass

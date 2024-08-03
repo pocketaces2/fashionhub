@@ -3,8 +3,7 @@
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">My Account</a>
-    <a href="#">Cart</a>
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
 </nav>
