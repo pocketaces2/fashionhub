@@ -1,8 +1,9 @@
 title: FashionHub
 description: >- 
   Your one-stop shop for the latest fashion trends.
-domain: https://pocketaces2.github.io/
-url: https://pocketaces2.github.io/
+baseurl: "/ecom-demo"
+domain: https://pocketaces2.github.io
+url: https://pocketaces2.github.io
 
 # Build settings
 theme: jekyll-theme-minimal
