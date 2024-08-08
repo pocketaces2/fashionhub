@@ -1,3 +1,11 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
 .login-container {
   background-color: #ffffff;
   padding: 20px;
@@ -5,12 +13,11 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
-  margin-top: 50px;
 }
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   margin: 8px 0;
   border: 1px solid #ccc;
