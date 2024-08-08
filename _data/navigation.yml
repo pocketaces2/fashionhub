@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Account
-  link: /login.html
+  link: /account.html
 - name: Clothing
   link: /products.html
 - name: Shopping bag
