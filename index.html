@@ -1,32 +1,28 @@
 ---
 layout: default
-title: Home
+title: Home - FashionHub
 ---
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to FashionHub</h1>
+        <p>Discover the latest trends in fashion and style. Shop our exclusive collection and elevate your wardrobe today.</p>
+        {% assign clothing_link = site.data.navigation | where: "name", "Clothing" | first %}
+        <a href="{{ site.baseurl }}{{ clothing_link.link }}" class="cta-button">Shop Now</a>    </div>
+</section>
 
-<div class="login-container">
-    <h2>Login to FashionHub</h2>
-    <form id="loginForm">
-        <input type="text" id="username" name="username" placeholder="Username" required>
-        <input type="password" id="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-        <div class="error-message" id="errorMessage">Invalid username or password.</div>
-    </form>
-    <p>Don't have an account? <a href="#">Sign up</a></p>
-</div>
-
-<script>
-    const validUsername = 'test';
-    const validPassword = 'test';
-
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        if (username === validUsername && password === validPassword) {
-            window.location.href = 'account.html';
-        } else {
-            document.getElementById('errorMessage').style.display = 'block';
-        }
-    });
-</script>
+<section class="features">
+    <div class="container">
+        <div class="feature">
+            <h2>Exclusive Collections</h2>
+            <p>Explore our exclusive range of fashion items designed to make you stand out.</p>
+        </div>
+        <div class="feature">
+            <h2>Quality Craftsmanship</h2>
+            <p>Experience the finest materials and craftsmanship with every piece you buy.</p>
+        </div>
+        <div class="feature">
+            <h2>Exceptional Service</h2>
+            <p>Enjoy exceptional customer service and support throughout your shopping experience.</p>
+        </div>
+    </div>
+</section>
