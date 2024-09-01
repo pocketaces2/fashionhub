@@ -15,9 +15,11 @@ function loadCartItems() {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
 
+        const imageUrl = `${baseurl}/${item.image}`;
+
         itemElement.innerHTML = `
             <div class="cart-item-image">
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${imageUrl}" alt="${item.name}">
             </div>
             <div class="cart-item-info">
                 <h3>${item.name}</h3>

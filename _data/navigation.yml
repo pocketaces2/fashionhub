@@ -1,10 +1,10 @@
 - name: Home
   link: /
 - name: Account
-  link: /account.html
+  link: /account
 - name: Clothing
-  link: /products.html
+  link: /products
 - name: Shopping bag
-  link: /cart.html
+  link: /cart
 - name: About
-  link: /about.html
+  link: /about

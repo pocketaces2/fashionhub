@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (username === validUsername && password === validPassword) {
         localStorage.setItem("isLoggedIn", true);
-        window.location.href = 'account.html';
+        window.location.href = baseurl + "/account/";
     } else {
         document.getElementById('errorMessage').style.display = 'block';
     }
