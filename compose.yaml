@@ -1,0 +1,7 @@
+services:
+  web-app:
+    image: pocketaces2/fashionhub-demo-app:latest
+    container_name: fashionhub-demo-app
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
