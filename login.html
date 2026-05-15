@@ -4,17 +4,40 @@ title: Home
 ---
 
 <div class="login-container">
-    <h2>Login to FashionHub</h2>
-    <form id="loginForm">
-        <input type="text" id="username" name="username" placeholder="Username" required>
-        <input type="password" id="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-        <div class="error-message" id="errorMessage">Invalid username or password.</div>
-    </form>
-    <p class="test-credentials">For testing purposes, use:</p>
-    <p class="test-credentials"><strong>Username:</strong> demouser</p>
-    <p class="test-credentials"><strong>Password:</strong> fashion123</p>
-    <p>Don't have an account? <a href="#">Sign up</a></p>
+    <div class="auth-panel" id="loginPanel">
+        <h2>Login to FashionHub</h2>
+        <form id="loginForm">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <div class="error-message" id="errorMessage">Invalid username or password.</div>
+            <div class="success-message" id="loginSuccessMessage" style="display:none">Registration successful! Enter your password to log in.</div>
+        </form>
+        <p class="test-credentials">For testing purposes, use:</p>
+        <p class="test-credentials"><strong>Username:</strong> demouser</p>
+        <p class="test-credentials"><strong>Password:</strong> fashion123</p>
+        <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+    </div>
+
+    <div class="auth-panel is-hidden" id="signupPanel">
+        <h2>Create a FashionHub account</h2>
+        <form id="signupForm">
+            <label class="form-label" for="signupUsername">Username</label>
+            <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required>
+            <label class="form-label" for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+            <label class="form-label" for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+            <label class="form-label" for="signupConfirmPassword">Confirm Password</label>
+            <input type="password" id="signupConfirmPassword" name="signupConfirmPassword" placeholder="Confirm Password" required>
+            <input type="submit" value="Create Account">
+            <div class="error-message" id="signupErrorMessage"></div>
+            <div class="success-message" id="signupSuccessMessage"></div>
+        </form>
+        <p>Already have an account? <a href="#" id="showLogin">Back to login</a></p>
+    </div>
 </div>
 
 <script src="assets/js/login.js"></script>
